@@ -13,9 +13,9 @@ const CONTATO = {
   whatsapp: "5561993574056",
 
   // Link de download do app.
-  // AGORA: cole aqui a URL do APK.
+  // AGORA: APK hospedado no Expo/EAS.
   // DEPOIS: troque por "https://play.google.com/store/apps/details?id=..."
-  downloadUrl: "",
+  downloadUrl: "https://expo.dev/artifacts/eas/jrPm4l5y8q5i1Ci-s7QVz1PL5UpUrNn-_nugrloOs1s.apk",
 
   msg: {
     advogado:
