@@ -1,0 +1,22 @@
+# Dependências (não há build, mas por segurança)
+node_modules/
+
+# Config local de ferramentas
+.claude/
+.vscode/
+.idea/
+
+# Segredos — nunca commitar
+.env
+.env.*
+*.local
+credenciais*.txt
+Credenciais*.txt
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
