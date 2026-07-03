@@ -72,7 +72,7 @@ O texto é baseado na referência `https://advogado20.vercel.app/` e na
 documentação do produto (`ESPECIFICACAO_FUNCIONAL_APP.md`, `DESIGN.md`).
 As seções seguem uma narrativa em "Artigos":
 
-1. **Hero** — proposta + card de match interativo ("A 0,8 km de você").
+1. **Hero** — proposta + mascote com especialidades orbitais.
 2. **Artigo I — Benefícios** — Segurança, Conexão real, Liberdade.
 3. **O rito — Como funciona** — 4 passos (área → localização → indicação → WhatsApp).
 4. **Artigo II — Para Advogados** — Clube VIP (vitrine, vantagens, leads exclusivos).

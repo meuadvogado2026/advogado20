@@ -338,7 +338,6 @@ a:focus-visible, button:focus-visible {
 
 /* ---------- Seções ---------- */
 .section { padding-block: clamp(70px, 10vw, 122px); position: relative; }
-.section--alt { background: linear-gradient(180deg, transparent, rgba(11,22,40,0.6), transparent); }
 
 .section__head { max-width: 640px; margin-bottom: 52px; }
 .section__head--center { margin-inline: auto; text-align: center; }
@@ -366,29 +365,6 @@ a:focus-visible, button:focus-visible {
 .pillar h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: #fff; margin: 0 0 10px; }
 .pillar p { margin: 0; color: var(--muted); font-size: 0.96rem; }
 .pillar p strong { color: var(--text); }
-
-/* ---------- Áreas de atuação ---------- */
-.areas-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
-}
-.area {
-  display: flex; align-items: center; gap: 14px;
-  padding: 18px 20px; border-radius: var(--r-md);
-  background: linear-gradient(165deg, var(--surface-2), var(--surface));
-  border: 1px solid var(--line-soft);
-  transition: transform 0.3s var(--ease), border-color 0.3s var(--ease), background 0.3s var(--ease);
-}
-.area:hover {
-  transform: translateY(-3px); border-color: var(--line);
-  background: linear-gradient(165deg, var(--surface-3), var(--surface));
-}
-.area__icon {
-  width: 42px; height: 42px; flex-shrink: 0; display: grid; place-items: center;
-  border-radius: 11px; background: rgba(2,102,255,0.12);
-  border: 1px solid var(--line-blue); color: var(--blue-soft);
-}
-.area:hover .area__icon { background: rgba(217,154,45,0.12); border-color: var(--line); color: var(--gold); }
-.area__name { font-family: var(--font-display); font-weight: 600; font-size: 0.98rem; color: var(--text); }
 
 /* ---------- Passos ---------- */
 .steps {
@@ -547,7 +523,6 @@ a:focus-visible, button:focus-visible {
   .vip__grid, .human__grid { grid-template-columns: 1fr; gap: 36px; }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .pillars { grid-template-columns: 1fr; }
-  .areas-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 760px) {
   .nav__links, .nav__cta { display: none; }
@@ -558,14 +533,35 @@ a:focus-visible, button:focus-visible {
   .orbit { font-size: 0.72rem; padding: 6px 10px; }
 }
 @media (max-width: 560px) {
-  /* Em telas estreitas, as áreas orbitais poluem — foco só no mascote */
-  .orbit { display: none; }
-  .hero__stage { max-width: 320px; }
+  .hero__stage { max-width: min(360px, 100vw - 18px); }
+  .hero__mascot { width: min(156px, 48%); }
+  .orbit {
+    gap: 4px;
+    padding: 4px 7px;
+    font-size: 0.52rem;
+    letter-spacing: 0;
+    border-radius: 999px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.42), inset 0 0 10px rgba(2, 102, 255, 0.12);
+  }
+  .orbit svg { width: 12px; height: 12px; }
+  .orbit:nth-of-type(1) { --y: 9% !important; }
+  .orbit:nth-of-type(2) { --x: 80% !important; --y: 19% !important; }
+  .orbit:nth-of-type(3) { --x: 83% !important; }
+  .orbit:nth-of-type(4) { --x: 80% !important; --y: 81% !important; }
+  .orbit:nth-of-type(5) { --y: 91% !important; }
+  .orbit:nth-of-type(6) { --x: 20% !important; --y: 81% !important; }
+  .orbit:nth-of-type(7) { --x: 17% !important; }
+  .orbit:nth-of-type(8) { --x: 20% !important; --y: 19% !important; }
 }
 @media (max-width: 480px) {
   .wrap { padding-inline: 18px; }
-  .steps, .areas-grid { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
   .hero__proof { gap: 16px; }
   .door { padding: 30px 24px; }
   .fab-wa { bottom: 18px; right: 18px; }
+}
+@media (max-width: 380px) {
+  .hero__stage { max-width: min(330px, 100vw - 16px); }
+  .orbit { padding: 3px 6px; font-size: 0.48rem; }
+  .orbit svg { display: none; }
 }
