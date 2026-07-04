@@ -29,22 +29,28 @@ Abra `script.js` e edite o objeto `CONTATO` no topo:
 ```js
 const CONTATO = {
   whatsapp: "5561993574056",   // WhatsApp da plataforma (advogados + contato geral)
-  downloadUrl: "",             // ← cole aqui o link do APK; depois troque pela URL da Google Play
+  downloadUrl: "",             // cole aqui apenas a URL oficial da Google Play quando existir
   ...
 };
 ```
 
 Fluxo dos CTAs (ninguém é enviado para e-mail):
 
-- **Cliente** (`Baixar o app` / `Baixar o aplicativo`): abre `downloadUrl`.
+- **Cliente** (`Baixar o app` / `Baixar o aplicativo`): abre `downloadUrl` apenas quando houver URL oficial da Google Play.
   Enquanto estiver vazio, mostra um aviso "em breve". Quando o app entrar na
-  loja, basta trocar `downloadUrl` pela URL do Google Play — nada mais muda.
+  loja, basta trocar `downloadUrl` pela URL do Google Play.
 - **Advogado** (`Quero ser parceiro`) e **WhatsApp flutuante**: abrem
   `https://wa.me/5561993574056` com mensagem pronta.
 
-Os links **Política de Privacidade** e **Termos de Uso** exibem um aviso de
-"em breve". Troque os `href="#"` com `data-legal="..."` pelos links reais quando
-as páginas existirem.
+Os links legais ja apontam para paginas estaticas dentro da landing:
+
+- `privacidade.html`
+- `termos.html`
+- `exclusao-de-dados.html`
+
+Ao publicar na Vercel, use essas URLs no Play Console, por exemplo
+`https://advogado20.vercel.app/privacidade.html` e
+`https://advogado20.vercel.app/exclusao-de-dados.html`.
 
 ## Rodar localmente
 
@@ -75,7 +81,7 @@ As seções seguem uma narrativa em "Artigos":
 1. **Hero** — proposta + mascote com especialidades orbitais.
 2. **Artigo I — Benefícios** — Segurança, Conexão real, Liberdade.
 3. **O rito — Como funciona** — 4 passos (área → localização → indicação → WhatsApp).
-4. **Artigo II — Para Advogados** — Clube VIP (vitrine, vantagens, leads exclusivos).
+4. **Artigo II — Para Advogados** — Clube de Beneficios (perfil profissional, contato externo e beneficios operacionais).
 5. **Artigo III — Propósito** — rede de intercessão / pedidos de oração.
 6. **Chamado final** — as duas portas: *Sou Cliente* e *Sou Advogado*.
 

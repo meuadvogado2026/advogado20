@@ -12,14 +12,12 @@ const CONTATO = {
   // WhatsApp da plataforma (formato internacional, só dígitos): 61 99357-4056
   whatsapp: "5561993574056",
 
-  // Link de download do app.
-  // AGORA: APK hospedado no Expo/EAS.
-  // DEPOIS: troque por "https://play.google.com/store/apps/details?id=..."
-  downloadUrl: "https://expo.dev/artifacts/eas/jrPm4l5y8q5i1Ci-s7QVz1PL5UpUrNn-_nugrloOs1s.apk",
+  // Link oficial do app. Manter vazio ate a pagina da Google Play estar pronta.
+  downloadUrl: "",
 
   msg: {
     advogado:
-      "Olá! Sou advogado(a) e quero me candidatar ao Clube VIP da Advogado 2.0. Minha OAB é: ",
+      "Olá! Sou advogado(a) e quero participar do Clube de Benefícios da Advogado 2.0. Minha OAB é: ",
     geral:
       "Olá! Vim pela página do Advogado 2.0 e gostaria de mais informações.",
   },
@@ -36,8 +34,7 @@ function baixarApp() {
     window.open(CONTATO.downloadUrl, "_blank", "noopener");
   } else {
     alert(
-      "O download do aplicativo estará disponível em instantes.\n" +
-        "Em breve também na Google Play."
+      "O aplicativo estará disponível pela Google Play em breve."
     );
   }
 }
@@ -54,18 +51,6 @@ document.querySelectorAll("[data-contact]").forEach((el) => {
   el.addEventListener("click", (e) => {
     e.preventDefault();
     abrirWhatsapp(el.getAttribute("data-contact"));
-  });
-});
-
-/* Links legais (placeholder até existirem as páginas reais) */
-document.querySelectorAll("[data-legal]").forEach((el) => {
-  el.addEventListener("click", (e) => {
-    e.preventDefault();
-    const doc =
-      el.getAttribute("data-legal") === "termos"
-        ? "Termos de Uso"
-        : "Política de Privacidade";
-    alert(`${doc}\n\nEste documento será publicado em breve.`);
   });
 });
 

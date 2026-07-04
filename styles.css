@@ -383,7 +383,7 @@ a:focus-visible, button:focus-visible {
 .step h3 { font-size: 1.08rem; color: #fff; margin: 0 0 8px; font-weight: 700; font-family: var(--font-display); }
 .step p { margin: 0; font-size: 0.9rem; color: var(--muted); }
 
-/* ---------- VIP (Para Advogados) ---------- */
+/* ---------- Para Advogados ---------- */
 .vip {
   background:
     radial-gradient(120% 100% at 100% 0%, rgba(217,154,45,0.12), transparent 55%),
@@ -497,6 +497,69 @@ a:focus-visible, button:focus-visible {
 .footer__links a { color: var(--muted); font-size: 0.9rem; transition: color 0.2s var(--ease); }
 .footer__links a:hover { color: var(--gold); }
 .footer__base { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 22px; font-size: 0.82rem; color: var(--muted-2); }
+
+/* ---------- Paginas legais ---------- */
+.legal-page {
+  background:
+    radial-gradient(90% 70% at 50% -10%, rgba(217, 154, 45, 0.10), transparent 55%),
+    var(--bg);
+}
+.legal-main {
+  width: min(860px, calc(100% - 32px));
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 42px 0 72px;
+}
+.legal-shell {
+  padding: clamp(24px, 4vw, 44px);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-md);
+  background: linear-gradient(180deg, rgba(15, 29, 51, 0.92), rgba(11, 22, 40, 0.96));
+  box-shadow: var(--shadow-md);
+}
+.legal-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 26px;
+  color: var(--gold);
+  font-weight: 700;
+}
+.legal-header {
+  margin-bottom: 32px;
+}
+.legal-header h1 {
+  margin: 8px 0 12px;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  line-height: 1.08;
+}
+.legal-header p,
+.legal-section p,
+.legal-section li {
+  color: var(--muted);
+}
+.legal-section {
+  padding-top: 26px;
+  border-top: 1px solid var(--line-soft);
+}
+.legal-section + .legal-section {
+  margin-top: 26px;
+}
+.legal-section h2 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 1.22rem;
+}
+.legal-section a {
+  color: var(--gold-bright);
+}
+.legal-section ul,
+.legal-section ol {
+  padding-left: 22px;
+}
 
 /* ---------- WhatsApp flutuante ---------- */
 .fab-wa {
