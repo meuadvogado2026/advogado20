@@ -29,16 +29,16 @@ Abra `script.js` e edite o objeto `CONTATO` no topo:
 ```js
 const CONTATO = {
   whatsapp: "5561993574056",   // WhatsApp da plataforma (advogados + contato geral)
-  downloadUrl: "",             // cole aqui apenas a URL oficial da Google Play quando existir
+  downloadUrl: "https://expo.dev/artifacts/eas/jrPm4l5y8q5i1Ci-s7QVz1PL5UpUrNn-_nugrloOs1s.apk",
   ...
 };
 ```
 
 Fluxo dos CTAs (ninguém é enviado para e-mail):
 
-- **Cliente** (`Baixar o app` / `Baixar o aplicativo`): abre `downloadUrl` apenas quando houver URL oficial da Google Play.
-  Enquanto estiver vazio, mostra um aviso "em breve". Quando o app entrar na
-  loja, basta trocar `downloadUrl` pela URL do Google Play.
+- **Cliente** (`Baixar o app` / `Baixar APK agora`): abre temporariamente o APK
+  gerado no Expo/EAS. Quando o app entrar na loja, basta trocar `downloadUrl`
+  pela URL do Google Play.
 - **Advogado** (`Quero ser parceiro`) e **WhatsApp flutuante**: abrem
   `https://wa.me/5561993574056` com mensagem pronta.
 

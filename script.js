@@ -12,8 +12,8 @@ const CONTATO = {
   // WhatsApp da plataforma (formato internacional, só dígitos): 61 99357-4056
   whatsapp: "5561993574056",
 
-  // Link oficial do app. Manter vazio ate a pagina da Google Play estar pronta.
-  downloadUrl: "",
+  // Link temporario do APK gerado no Expo/EAS. Substituir pela Google Play quando existir.
+  downloadUrl: "https://expo.dev/artifacts/eas/jrPm4l5y8q5i1Ci-s7QVz1PL5UpUrNn-_nugrloOs1s.apk",
 
   msg: {
     advogado:
