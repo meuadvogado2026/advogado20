@@ -48,9 +48,9 @@ Os links legais ja apontam para paginas estaticas dentro da landing:
 - `termos.html`
 - `exclusao-de-dados.html`
 
-Ao publicar na Vercel, use essas URLs no Play Console, por exemplo
-`https://advogado20.vercel.app/privacidade.html` e
-`https://advogado20.vercel.app/exclusao-de-dados.html`.
+Ao publicar na Vercel, use as URLs canonicas no Play Console, por exemplo
+`https://advogado20.com.br/privacidade.html` e
+`https://advogado20.com.br/exclusao-de-dados.html`.
 
 ## Rodar localmente
 
@@ -74,8 +74,9 @@ Depois acesse `http://localhost:4321`.
 
 ## Conteúdo
 
-O texto é baseado na referência `https://advogado20.vercel.app/` e na
+O texto foi originalmente baseado na referência `https://advogado20.vercel.app/` e na
 documentação do produto (`ESPECIFICACAO_FUNCIONAL_APP.md`, `DESIGN.md`).
+O domínio público canônico atual é `https://advogado20.com.br/`.
 As seções seguem uma narrativa em "Artigos":
 
 1. **Hero** — proposta + mascote com especialidades orbitais.
