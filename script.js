@@ -12,8 +12,8 @@ const CONTATO = {
   // WhatsApp da plataforma (formato internacional, só dígitos): 61 99357-4056
   whatsapp: "5561993574056",
 
-  // Link temporario do APK gerado no Expo/EAS. Substituir pela Google Play quando existir.
-  downloadUrl: "https://expo.dev/artifacts/eas/jrPm4l5y8q5i1Ci-s7QVz1PL5UpUrNn-_nugrloOs1s.apk",
+  // Link temporario do build instalavel no Expo/EAS. Substituir pela Google Play quando existir.
+  downloadUrl: "https://expo.dev/accounts/advogado2.0/projects/meu-advogado-20/builds/11e07d42-62e9-40ee-a1f8-72d41f607d16",
 
   msg: {
     advogado:
