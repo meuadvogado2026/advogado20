@@ -29,7 +29,7 @@ Abra `script.js` e edite o objeto `CONTATO` no topo:
 ```js
 const CONTATO = {
   whatsapp: "5561993574056",   // WhatsApp da plataforma (advogados + contato geral)
-  downloadUrl: "https://expo.dev/accounts/advogado2.0/projects/meu-advogado-20/builds/11e07d42-62e9-40ee-a1f8-72d41f607d16",
+  downloadUrl: "https://expo.dev/accounts/advogado2.0/projects/meu-advogado-20/builds/9201bdf8-36c7-42d4-b1a0-e7dbb7a3335d",
   ...
 };
 ```
