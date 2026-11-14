@@ -13,7 +13,7 @@ const CONTATO = {
   whatsapp: "5561993574056",
 
   // Link temporario do build instalavel no Expo/EAS. Substituir pela Google Play quando existir.
-  downloadUrl: "https://expo.dev/accounts/advogado2.0/projects/meu-advogado-20/builds/9201bdf8-36c7-42d4-b1a0-e7dbb7a3335d",
+  downloadUrl: "https://github.com/meuadvogado2026/Advogado-mobile/releases/download/preview-v0.1.1-vc6/advogado20-v0.1.1-vc6.apk",
 
   msg: {
     advogado:
