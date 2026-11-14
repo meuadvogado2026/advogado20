@@ -1,8 +1,7 @@
 # Advogado 2.0 — Landing Page
 
 Landing page institucional do Advogado 2.0. **Sem cadastro/login**: a página
-tem apenas dois "chamados" (CTAs) — um para **clientes** e outro para
-**advogados** — que abrem o WhatsApp da plataforma.
+tem dois chamados principais: **clientes** baixam o APK e **advogados** abrem o WhatsApp da plataforma.
 
 Stack: HTML + CSS + JavaScript puro (sem build, sem dependências). LCP rápido,
 deploy em qualquer host estático (Vercel, Netlify, GitHub Pages, etc.).
@@ -29,7 +28,7 @@ Abra `script.js` e edite o objeto `CONTATO` no topo:
 ```js
 const CONTATO = {
   whatsapp: "5561993574056",   // WhatsApp da plataforma (advogados + contato geral)
-  downloadUrl: "https://expo.dev/accounts/advogado2.0/projects/meu-advogado-20/builds/9201bdf8-36c7-42d4-b1a0-e7dbb7a3335d",
+  downloadUrl: "https://github.com/meuadvogado2026/Advogado-mobile/releases/download/preview-v0.1.1-vc6/advogado20-v0.1.1-vc6.apk",
   ...
 };
 ```
@@ -96,3 +95,10 @@ Replica o sistema **"Lex Elite"** do app mobile (tokens em
 - Tipografia **Montserrat** (títulos) + **Inter** (corpo), como no app.
 - Logo oficial, mascote e arte de oração reaproveitados do app.
 - Ilustrações SVG originais (radar/mapa de match, ícones das áreas).
+
+
+## Download preview atualizado - 2026-11-14
+
+APK 0.1.1/versionCode 6 publicado como asset da release GitHub preview-v0.1.1-vc6. Link direto em script.js. Backend DigitalOcean com release privacy-20261114; assinatura preservada em relacao ao APK vc5. Validacoes locais/HTTP e inspecao estatica do APK passaram; teste instalado e Google OAuth em aparelho pendentes por decisao do responsavel. AAB/Google Play nao foram publicados. E-mails usam exclusivamente advogado20.com.br; encaminhamento Cloudflare ainda depende de ativacao/teste.
+
+Rollback editorial: o link anterior era a build EAS 9201bdf8-36c7-42d4-b1a0-e7dbb7a3335d, com backend Railway descontinuado; nao e um fallback funcional recomendado.
