@@ -13,7 +13,7 @@ const CONTATO = {
   whatsapp: "5561993574056",
 
   // APK preview assinado, publicado como asset GitHub. Substituir pela Google Play quando existir.
-  downloadUrl: "https://github.com/meuadvogado2026/Advogado-mobile/releases/download/preview-v0.1.1-vc7/advogado20-v0.1.1-vc7.apk",
+  downloadUrl: "https://github.com/meuadvogado2026/Advogado-mobile/releases/download/preview-v0.1.1-vc9/advogado20-v0.1.1-vc9.apk",
 
   msg: {
     advogado:

@@ -28,7 +28,7 @@ Abra `script.js` e edite o objeto `CONTATO` no topo:
 ```js
 const CONTATO = {
   whatsapp: "5561993574056",   // WhatsApp da plataforma (advogados + contato geral)
-  downloadUrl: "https://github.com/meuadvogado2026/Advogado-mobile/releases/download/preview-v0.1.1-vc7/advogado20-v0.1.1-vc7.apk",
+  downloadUrl: "https://github.com/meuadvogado2026/Advogado-mobile/releases/download/preview-v0.1.1-vc9/advogado20-v0.1.1-vc9.apk",
   ...
 };
 ```
@@ -107,3 +107,7 @@ Rollback editorial: o link anterior era a build EAS 9201bdf8-36c7-42d4-b1a0-e7db
 ## SPEC-020 - Feedback e dominio admin
 
 APK vc7 inclui dialogos de confirmacao da oracao e de busca vazia/erro. Novo painel https://admin.advogado20.com.br validado com login real e API DigitalOcean. Link da landing atualizado somente apos APK FINISHED e verificacao de assinatura/bundle.
+
+## Download vigente - 2026-11-15 / APK vc9
+
+Usuario autorizou explicitamente atualizar o site para a versao atual antes de concluir teste Android manual. Download direto aponta ao preview0.1.1/vc9. EAS5bb4ad2e-c351-496a-a6ea-af70f701fc48 FINISHED; assetGitHub HTTP200, 87240072bytes, SHA25623db583bfe726bb2456f9a44d7b91b24f9abbe0fbe44d2fbbe580a4379102388. Mesmo package/certificado dos anteriores; inspecao estatica passou. Queryversionada em script.js evita reaproveitar o link antigo do cache. Validacao do CTA e smokeHTTP publicados registrados na governanca raiz, harness-results/spec024-landing-vc9.md. Teste Android/Google e primeiro acesso humano do convite permanecem pendentes; nao e AAB/Play nem homologacao10/10. Historico vc7 acima preservado.
